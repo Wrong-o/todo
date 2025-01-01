@@ -1,0 +1,48 @@
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0px;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header nav ul li {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+header nav ul li {
+  text-decoration: underline;
+}
+
+body {
+  font-family: Arial;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+ul#todoList li {
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul#todoList li:hover {
+
+}
