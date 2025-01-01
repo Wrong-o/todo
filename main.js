@@ -2,24 +2,19 @@ let todoList = ["Make Todolist", "Make next project"];  // Initial values
 
 let todoListElement = document.getElementById("todoList");  // Renamed to avoid conflict
 
-// Loop through the array to add items to the list
 todoList.forEach(item => {
   let listItem = document.createElement("li");
 
-  // Create a checkbox for the task
   let checkbox = document.createElement("input");
   checkbox.type = "checkbox";
   checkbox.classList.add("todo-checkbox");
 
-  // Create a span for the task text
   let span = document.createElement("span");
   span.textContent = item;
 
-  // Append the checkbox and text to the list item
   listItem.appendChild(checkbox);
   listItem.appendChild(span);
 
-  // Append the list item to the todo list
   todoListElement.appendChild(listItem);
 });
 
@@ -42,18 +37,18 @@ function addTask() {
     listItem.appendChild(checkbox);
     listItem.appendChild(span);
 
-    todoListElement.appendChild(listItem);  // Use renamed variable here
+    todoListElement.appendChild(listItem); 
 
-    taskInput.value = "";  // Clear input after adding task
+    taskInput.value = "";  
   } else {
-    alert("Please enter a task!");  // Alert if input is empty
+    alert("Please enter a task!"); 
   }
 }
 
-addButton.addEventListener("click", addTask);  // Add task when button is clicked
+addButton.addEventListener("click", addTask);  
 
 taskInput.addEventListener("keydown", function(event) {
-  if (event.key === "Enter") {  // Add task when Enter key is pressed
+  if (event.key === "Enter") {  
     addTask();
   }
 });
