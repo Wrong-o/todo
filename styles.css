@@ -32,6 +32,12 @@ body {
   padding: 0;
 }
 
+ul#todoList {
+  list-style-type: none;
+  padding: 0;
+  margin: 50px;
+}
+
 ul#todoList li {
   background-color: #fff;
   margin: 10px 0;
@@ -41,8 +47,22 @@ ul#todoList li {
   font-size: 1.2em;
   display: flex;
   justify-content: space-between;
+  text-align: center;
 }
 
 ul#todoList li:hover {
+  background-color: #f0f0f0;
+}
 
+.todo-checkbox {
+  margin-right: 15px;
+  transform: scale(1.2);
+}
+
+ul#todoList li span {
+  flex-grow: 1;
+}
+
+ul#todoList li:hover {
+  background-color: #f0f0f0;
 }
