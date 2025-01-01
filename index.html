@@ -1,21 +1,24 @@
-<!DOCTYPE>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta charset="UTF-8"> <title>A todolist</title> <link rel="stylesheet" href="styles.css"> </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>A Todo List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
   <header>
-      <h1> todo list project to learn web-dev</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-        </ul>
-      </nav>
+      <h1>Todo List Project</h1>
   </header>
-  <ul id="todoList"></ul> 
-    <script src="main.js"></script>
-  <form>
-    <input type="text" id="task" name="task"> 
-    <input type="submit" value="Add task">
-  </form>
+
+  <div>
+    <input type="text" id="taskInput" placeholder="Enter a new task">
+    <button id="addButton">Add Task</button>
+  </div>
+
+  <ul id="todoList"></ul>
+
+  <script src="main.js"></script>
 </body>
 </html>
+
